@@ -12,6 +12,7 @@ import com.stone.uiassignment.data.dummyDoctorVO
 import com.stone.uiassignment.data.dummySpecialties
 import com.stone.uiassignment.databinding.FragmentAppointmentBinding
 import com.stone.uiassignment.databinding.FragmentHomeBinding
+import com.stone.uiassignment.ui.activities.AppointmentActivity
 import com.stone.uiassignment.ui.viewpods.DoctorListViewPod
 
 class HomeFragment : Fragment() {
@@ -37,8 +38,15 @@ class HomeFragment : Fragment() {
 
         setupRecyclerView()
         setUpViewPods()
-
+        setupListener()
         initialData()
+    }
+
+    private fun setupListener() {
+        binding.btnConsult.setOnClickListener {
+            startActivity(AppointmentActivity.getIntent(requireContext()))
+        }
+
     }
 
     private fun setUpViewPods() {

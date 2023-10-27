@@ -23,6 +23,7 @@
     <color name="color_category_background">#8EB0FF</color>
     <color name="color_experience_background">#F9F9FB</color>
 
+    <color name="color_profile_border">#DEDEDE</color>
 
     <color name="color_tab_unselect">#484C52</color>
 
