@@ -17,7 +17,9 @@
     <color name="colorPink">#FDF1F3</color>
     <color name="colorBlue">#D6E3FF</color>
     <color name="colorYellow">#FEF6EC</color>
+    <color name="colorOrange">#FFA500</color>
 
+    <color name="colorOrangeBackground">#FEFEE1</color>
     <color name="search_view_border">#D6D6D6</color>
     <color name="color_consult_border">#E7E6FE</color>
     <color name="color_category_background">#8EB0FF</color>

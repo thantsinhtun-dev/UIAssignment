@@ -35,5 +35,9 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="book_appointment">Book Appointment</string>
+    <string name="upcoming_appointment">Upcoming Appointment</string>
+    <string name="december_14_2023">December 14, 2023</string>
+    <string name="_08_00_09_00_am">08:00 - 09:00 AM</string>
+    <string name="upcoming">Upcoming</string>
 
 </resources>
