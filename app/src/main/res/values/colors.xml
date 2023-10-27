@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="backgroundColor">#CCE9F9F9</color>
+    <color name="backgroundContactMessageColor">#F3F3F3</color>
+    <color name="colorPrimary">#3E64FF</color>
+    <color name="colorAccent">#EBF1FF</color>
+    <color name="colorPrimaryLight">#5185FE</color>
+    <color name="colorPrimaryDark">#3F3E3E</color>
+    <color name="colorPrimaryBackground">#146B779A</color>
+    <color name="colorSecondaryText">#262C3D</color>
+    <color name="colorSmallText">#717171</color>
+
+
+    <color name="colorPink">#FDF1F3</color>
+    <color name="colorBlue">#D6E3FF</color>
+    <color name="colorYellow">#FEF6EC</color>
+
+    <color name="search_view_border">#D6D6D6</color>
+    <color name="color_consult_border">#E7E6FE</color>
+    <color name="color_category_background">#8EB0FF</color>
+    <color name="color_experience_background">#F9F9FB</color>
+
+
+    <color name="color_tab_unselect">#484C52</color>
+
+    <color name="colorRed">#F6002C</color>
+    <color name="colorTransparentOverLay">#1a000000</color>
+    <color name="colorTransparentOverLayPlayButton">#80000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBackgroundSearch">#36113A5D</color>
+    <color name="n">#1E1E1E</color>
+</resources>

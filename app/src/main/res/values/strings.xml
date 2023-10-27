@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UI Assignment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lbl_home">Home</string>
+    <string name="lbl_doctors">Doctors</string>
+    <string name="lbl_appointment">Appointment</string>
+    <string name="lbl_profile">Profile</string>
+    <string name="welcome_mg_mg">Welcome, Mg Mg</string>
+    <string name="how_are_you_feeling_today">How are you feeling today?</string>
+    <string name="consult_with_top_specialists">Consult With Top Specialists</string>
+    <string name="consult_with_top_doctors_over_video_calls_and_recover_your_mental_health">Consult with top doctors over Video calls and Recover your mental Health</string>
+    <string name="consult_now">Consult Now</string>
+    <string name="doctor_specialties">Doctor Specialties</string>
+    <string name="_4_5_320">4.5 (320)</string>
+    <string name="experience">Experience</string>
+    <string name="fees">Fees</string>
+    <string name="_12_years">12 years</string>
+    <string name="make_appointment">Make Appointment</string>
+    <string name="view_all">View All</string>
+
+</resources>

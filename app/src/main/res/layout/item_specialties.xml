@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/margin_card_medium_2"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/margin_medium_3"
+        android:background="@drawable/background_specialties">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:src="@drawable/ic_workspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        tools:text="Workplace"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/text_small"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

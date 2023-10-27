@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/margin_medium"
+    android:layout_marginVertical="@dimen/margin_medium"
+    android:elevation="@dimen/margin_medium"
+    android:padding="@dimen/margin_medium"
+    app:cardCornerRadius="@dimen/margin_medium"
+    app:cardElevation="5dp"
+    app:contentPadding="@dimen/margin_medium">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/doctor_img"
+            style="@style/ImageView.Corner.medium"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_place_holder_men" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Dr. Khin"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_regular" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/margin_card_medium_3"
+                android:layout_height="@dimen/margin_card_medium_3"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_toStartOf="@id/rating"
+                android:src="@drawable/ic_star" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/_4_5_320"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_general"
+                android:layout_width="@dimen/margin_card_medium_3"
+                android:layout_height="@dimen/margin_card_medium_3"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_therapist" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_toEndOf="@id/ic_general"
+                android:fontFamily="@font/poppins_regular"
+                android:text="General Practitioner"
+                android:textSize="@dimen/text_small" />
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@color/color_experience_background"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_medium">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/experience"
+                    android:textSize="@dimen/text_smaller" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/doctor_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/_12_years"
+                    android:textSize="@dimen/text_regular" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/fees"
+                    android:textSize="@dimen/text_smaller" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/doctor_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/_12_years"
+                    android:textSize="@dimen/text_regular" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="@dimen/margin_card_medium_2"
+            android:text="@string/make_appointment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            app:cornerRadius="@dimen/margin_card_medium" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

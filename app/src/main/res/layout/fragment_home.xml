@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:paddingVertical="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium_2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/welcome_mg_mg"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_wave" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_header"
+            android:layout_marginHorizontal="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@drawable/backgroud_border_search_view"
+            android:paddingHorizontal="@dimen/margin_medium_2"
+            android:paddingVertical="@dimen/margin_card_medium_2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_search" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_toEndOf="@id/img_search"
+                android:background="@null"
+                android:hint="@string/how_are_you_feeling_today" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_consult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_edit"
+            android:layout_marginHorizontal="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@drawable/border_consoult"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium_2">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/consult_with_top_specialists"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_regular" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+
+                >
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/consult_with_top_doctors_over_video_calls_and_recover_your_mental_health"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_small" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingHorizontal="@dimen/margin_card_medium_2"
+                        android:text="@string/consult_now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_small"
+                        app:cornerRadius="@dimen/margin_card_medium_2" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_placeholder_consoult" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_specialties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_consult"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="@dimen/margin_medium_2"
+            android:layout_marginVertical="@dimen/margin_medium_2"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/doctor_specialties"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_specialties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_specialties"
+            android:layout_marginHorizontal="@dimen/margin_medium_2"
+
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4"
+            tools:listitem="@layout/item_specialties"
+
+            />
+
+        <include
+            android:id="@+id/vp_topDoctor"
+            layout="@layout/view_pod_doctor_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_specialties"
+            android:layout_marginTop="@dimen/margin_large" />
+
+        <include
+            android:id="@+id/vp_availableDoctor"
+            layout="@layout/view_pod_doctor_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vp_topDoctor"
+            android:layout_marginTop="@dimen/margin_large" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
